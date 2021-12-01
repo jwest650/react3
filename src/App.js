@@ -1,9 +1,13 @@
-import "./App.css";
 import React from "react";
 
-class App extends React.Component {
+function App() {
+    return <WelcomeComponent name="Codetrain is awesome, react works!!!" />;
+}
+
+class WelcomeComponent extends React.Component {
     render() {
-        return <h1>Codetrain is awesome, react works!!!.</h1>;
+        return <h1>{this.props.name}</h1>;
     }
 }
+
 export default App;
